@@ -1,6 +1,6 @@
-# Sistemas-Embebidos-
+# Sistemas-Embebidos
 
-*aqui va algo
+* aqui va algo
 
 [ideas]: https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Ideas.png
 
