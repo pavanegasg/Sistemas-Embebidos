@@ -1,6 +1,6 @@
 # Sistemas-Embebidos
 
-* aqui va algo
+* Encontranso relaciones - escaleras preguntas 
 
 [ideas]: https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Ideas.png
 
