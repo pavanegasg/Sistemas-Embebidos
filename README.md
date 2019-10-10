@@ -27,6 +27,6 @@ Pedro Alejandro Vanegas
 ![alt text][problema]
 
 
-* [Anteproyecto](https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Anteproyecto_embebidos.pdf) 
+* [Anteproyecto](https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Anteproyecto_embebidos%20(1).pdf) 
 
 
