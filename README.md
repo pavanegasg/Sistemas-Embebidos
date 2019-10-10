@@ -3,7 +3,7 @@
 [diagrama1]: https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/diagrama1.jpeg
 [diagrama2]: https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/diagrama2.jpeg
 [problema]: https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/problema.png
-
+```
 Maria Elisa Castro Fuñez 
 Gabriel Martinez
 Julian Molina 
@@ -11,7 +11,7 @@ Nicold Peña
 Juan Camilo Ramirez
 Oscar Mauricio Segura 
 Pedro Alejandro Vanegas 
-
+```
 
 * Encontrando relaciones - escaleras preguntas 
 
