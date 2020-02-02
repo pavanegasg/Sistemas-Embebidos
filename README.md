@@ -29,4 +29,6 @@ Pedro Alejandro Vanegas
 
 ## [Anteproyecto](https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentos/Anteproyecto_embebidos.pdf) 
 
+## [Manuales](https://github.com/pavanegasg/Sistemas-Embebidos/tree/master/manuales)
 
+## [Códigos](https://github.com/pavanegasg/Sistemas-Embebidos/tree/master/codigos)
