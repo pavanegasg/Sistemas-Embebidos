@@ -34,4 +34,4 @@ Pedro Alejandro Vanegas
 
 ## [Manuales](https://github.com/pavanegasg/Sistemas-Embebidos/tree/master/Manuales)
 
-## [Códigos](https://github.com/pavanegasg/Sistemas-Embebidos/tree/master/codigos)
+## [Códigos](https://github.com/pavanegasg/Sistemas-Embebidos/tree/master/Códigos)
