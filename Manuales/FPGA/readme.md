@@ -6,7 +6,7 @@
 
 Esta guía provee los recursos basicos necesarios para el uso de la FPGA desde Ubuntu.
 
-### Instalación pre requisitos
+### Instalación prerrequisitos
 
  Para el uso del dispositivo es necesario instalar Yosys tool chain. Pero primero se hace necesario instalar los prequisitor para compilar e instalar el icestorm, Arachne-PNR y Yosys tool chain 
 
