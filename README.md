@@ -8,6 +8,9 @@ Juan Camilo Ramirez
 Oscar Mauricio Segura 
 Pedro Alejandro Vanegas 
 ```
+
+## [Test de los 6 sombreros](https://github.com/pavanegasg/Sistemas-Embebidos/tree/master/Documentos/Test%20de%20los%206%20sombreros)
+
 ## Encontrando relaciones - escaleras preguntas 
 
 ![alt text](https://raw.githubusercontent.com/pavanegasg/Sistemas-Embebidos/master/Documentos/ideas.png)
