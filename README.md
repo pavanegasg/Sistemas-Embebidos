@@ -1,8 +1,4 @@
 # EmPet
-[ideas]: https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/ideas.png
-[diagrama1]: https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/diagrama1.jpeg
-[diagrama2]: https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/diagrama2.jpeg
-[problema]: https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/problema.png
 ```
 Maria Elisa Castro Fuñez 
 Gabriel Martinez
@@ -15,18 +11,23 @@ Pedro Alejandro Vanegas
 
 * Encontrando relaciones - escaleras preguntas 
 
-![alt text][ideas]
+![alt text](https://raw.githubusercontent.com/pavanegasg/Sistemas-Embebidos/master/Documentos/ideas.png)
 
 * Diagramas 
 
-![alt text](/Documentos/diagrama1)
-![alt text][/Documentos/diagrama2]
+![alt text](https://raw.githubusercontent.com/pavanegasg/Sistemas-Embebidos/master/Documentos/diagrama1.jpeg)
+
+![alt text](https://raw.githubusercontent.com/pavanegasg/Sistemas-Embebidos/master/Documentos/diagrama2.jpeg)
 
 * Problema 
 
-![alt text][problema]
+![alt text](https://raw.githubusercontent.com/pavanegasg/Sistemas-Embebidos/master/Documentos/problema.png)
+
+* Asignación de tareas 
+
+![alt text](https://raw.githubusercontent.com/pavanegasg/Sistemas-Embebidos/master/Documentos/asignacion.png)
 
 
-* [Anteproyecto](https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Anteproyecto_embebidos%20(1).pdf) 
+* [Anteproyecto](https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentos/Anteproyecto_embebidos.pdf) 
 
 
