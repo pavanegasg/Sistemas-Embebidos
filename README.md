@@ -14,7 +14,7 @@ Pedro Alejandro Vanegas
 
 ## Diagramas 
 
-![](https://raw.githubusercontent.com/pavanegasg/Sistemas-Embebidos/master/Documentos/diagrama1.jpeg =24x48)
+![](https://raw.githubusercontent.com/pavanegasg/Sistemas-Embebidos/master/Documentos/diagrama1.jpeg)
 
 ![alt text](https://raw.githubusercontent.com/pavanegasg/Sistemas-Embebidos/master/Documentos/diagrama2.jpeg)
 
