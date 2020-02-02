@@ -19,8 +19,8 @@ Pedro Alejandro Vanegas
 
 * Diagramas 
 
-![alt text][diagrama1]
-![alt text][diagrama2]
+![alt text][/Documentos/diagrama1]
+![alt text][/Documentos/diagrama2]
 
 * Problema 
 
