@@ -25,7 +25,7 @@ Pedro Alejandro Vanegas
 
 * Asignación de tareas 
 
-![alt text](https://raw.githubusercontent.com/pavanegasg/Sistemas-Embebidos/master/Documentos/asignacion.png)
+![alt text](https://raw.githubusercontent.com/pavanegasg/Sistemas-Embebidos/master/Documentos/asignacion.PNG)
 
 
 * [Anteproyecto](https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentos/Anteproyecto_embebidos.pdf) 
