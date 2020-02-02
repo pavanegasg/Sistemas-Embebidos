@@ -2,7 +2,7 @@
 
 
 
-Primeros pasos FPGA BlackIceMx
+## Primeros pasos FPGA BlackIceMx
 
 Esta guía provee los recursos basicos necesarios para el uso de la FPGA desde Ubuntu.
 
