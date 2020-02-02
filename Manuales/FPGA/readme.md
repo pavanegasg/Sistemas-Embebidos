@@ -52,7 +52,7 @@ En el mismo directorio
 	sudo make install
 
 
-### Carga de primer ejemplo
+### Primer diseño
 
 Para el primer programa usaremos un ejemplo prediseñado para la FPGA, por lo tanto, clonamos este ejemplo desde github, lo que se puede hacer con:
 
@@ -66,7 +66,7 @@ En esta carpeta estará el archivo de pines(ucf), la descripción en verilog(chi
 
 	make
 
-### cargando el primer diseño 
+### Cargando el primer diseño 
 
 En el terminal se ejecutan los comandos:
 
