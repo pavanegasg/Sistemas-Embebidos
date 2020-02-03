@@ -11,7 +11,7 @@ Para la utilización de este sensor se empleo la libreria _PulseSensor Playgroun
 Esta prueba se realizo con la finalidad de obtener una medición de la señal análoga recibida por el Arduino proveniente del sensor, la cual como se puede observar en la siguiente imagen, corresponde a la grafica del ritmo cardiaco del sujeto de prueba. 
 
 <p align="center">
-  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/Pulse%20Sensor/PrimerPrueba.png" width="350" title="hover text">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentación/Sensores/Pulse%20Sensor/PrimerPrueba.png" width="350" title="hover text">
 </p>
 
 ## Obtención del BPM en humanos 
@@ -21,7 +21,7 @@ Para la obtención de los latidos por minuto se hizo uso de la información obte
 Para poder definir este umbral es necesario calibrar el sensor, esta se realiza observando el valor proveniente del sensor, en el caso del sujeto de prueba empleado se encontró que este es de 520.
 
 <p align="center">
-  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/Pulse%20Sensor/BPM.jpeg" width="550" title="hover text">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentación/Sensores/Pulse%20Sensor/BPM.jpeg" width="550" title="hover text">
 </p>
 
 En la imagen anterior se presenta lo obtenido por el programa, donde el primer valor presentado es la frecuencia cardiaca (en latidos por minuto), y el ultimo es el valor entregado por el sensor.
