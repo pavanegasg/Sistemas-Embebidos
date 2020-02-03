@@ -4,7 +4,7 @@ Pulse sensor es un sensor diseñado por Joel Murphy y Yury Gitman, el cual permi
 
 ## Prerrequisitos
 
-Para la utilización de este sensor se empleo uso de la libreria _PulseSensor Playground_ en el IDE de arduino
+Para la utilización de este sensor se empleo uso de la libreria _PulseSensor Playground_ la cual se puede descargar en el IDE de Arduino.
 
 ## Pruebas preliminares
 
@@ -29,14 +29,3 @@ En la imagen anterior se presenta lo obtenido por el programa, donde el primer v
 ## Obtención del BPM en perros
 
 Para la obtención de esta se emplea el mismo programa que en la sección anterior, sin embargo de debe realizar una nueva calibración, en este caso el sujeto de prueba fue un labrador dorado adulto, el sensor se ubico en la ingle del perro debido a la poca cantidad de pelo y la presencia de venas y arterias cercanas a la piel, en este caso el valor de calibración fue de 507. 
-
-
-
-
-
-
-
-
-
-
-
