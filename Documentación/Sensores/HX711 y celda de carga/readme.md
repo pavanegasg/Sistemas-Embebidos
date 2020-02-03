@@ -15,7 +15,7 @@ Para la utilización de este sensor se empleo de la libreria _HX_711_ la cual se
 Para la calibración de este se empleo un programa en el cual se ingresa el peso en gramos del objeto que se posiciona en la celda de carga, en el caso de la celda de carga numero 1 se encontró que el valor de calibración es -391.55.
 
 <p align="center">
-  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/HX711%20y%20celda%20de%20carga/CeldaCalibracion.jpeg" width="550" title="hover text">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentación/Sensores/HX711%20y%20celda%20de%20carga/CeldaCalibracion.jpeg" width="550" title="hover text">
 </p>
 
 ## Prueba de la calibración
@@ -23,5 +23,5 @@ Para la calibración de este se empleo un programa en el cual se ingresa el peso
 El valor de calibración obtenido en el punto anterior se ingresa al programa _Read_1x_load_cell_, con este arroja el peso del objeto que se encuentre en la celda de carga, a continuación de presente lo obtenido al cambiar una pesa de 150 g a una pesa de 213 g.
 
 <p align="center">
-  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/HX711%20y%20celda%20de%20carga/CeldaCalibrada.jpeg" width="550" title="hover text">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentación/Sensores/HX711%20y%20celda%20de%20carga/CeldaCalibrada.jpeg" width="550" title="hover text">
 </p>
