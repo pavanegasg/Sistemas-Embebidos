@@ -21,5 +21,5 @@ Para la obtención de los latidos por minuto se hizo uso de la información obte
 Para poder definir este umbral es necesario calibrar el sensor, esta se realiza observando el valor proveniente del sensor, en el caso del sujeto de prueba empleado se encontró que este es de 510.
 
 <p align="center">
-  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/Pulse%20Sensor/BPM.jpeg" width="350" title="hover text">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/Pulse%20Sensor/BPM.jpeg" width="450" title="hover text">
 </p>
