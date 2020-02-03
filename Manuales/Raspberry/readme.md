@@ -1,8 +1,8 @@
-Para iniciar todo:
+### Para iniciar todo:
 - Descargar .img (Raspbian Lite) de https://www.raspberrypi.org/downloads/raspbian/, guía de instalación en https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
 - Correr el comando lsblk para saber donde está ubicada la memoria (algo como /dev/sdX, X es una letra)
 - Correr sudo dd if=nombreIMG of=/ubicaciónDisco bs=8M, tener MUCHO cuidado con elegir bien el disco
-	- sudo dd bs=8M if=2019-07-10-raspbian-buster-lite.img of=/dev/sdb status=progress conv=fsync
+	sudo dd bs=8M if=2019-07-10-raspbian-buster-lite.img of=/dev/sdb status=progress conv=fsync
 - En la carpeta boot modificar:
 	- config.txt: agregar enable_uart=1 al final
 	- cmdline.txt: se le quita la palabra “quiet”
