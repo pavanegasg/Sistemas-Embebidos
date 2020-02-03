@@ -36,13 +36,11 @@ Para conocer la dirección del PC:
 
 	ifconfig
 	
-La primera dirección que aparece es la del PC, por ejemplo 10.42.0.1
-
-Para buscar la dirección asignada a la RasPi
+La primera dirección que aparece es la del PC, por ejemplo 10.42.0.1. Para buscar la dirección asignada a la RasPi:
 
 	nmap -sT 10.42.0.2-254 
 
-Los primeros 3 números son los primeros 3 de la dirección IP del PC, por ejemplo 10.42.0.29. Para conectarse a la Raspberry
+Los primeros 3 números son los primeros 3 de la dirección IP del PC, por ejemplo 10.42.0.29. Para conectarse a la Raspberry:
 
 	ssh pi@10.42.0.29
 	contraseña: raspberry
@@ -70,11 +68,11 @@ Para escribir una nueva:
 
 * Servidor de bases de datos:
 
-Instalar con
+Instalar con:
 	
 	sudo apt install mariadb-client mariadb-server
 	
-Para entrar a la base de datos desde bash
+Para entrar a la base de datos desde bash:
 
 	sudo mysql -u root -p
 	
@@ -88,7 +86,7 @@ Abrir el archivo de configuración con:
 
 	sudo nano /etc/apache2/apache2.conf
 			
-Agregar al final del archivo: 
+Agregar al final del archivo y guardar: 
 
 	Include /etc/phpmyadmin/apache.conf
 
@@ -98,11 +96,11 @@ Reiniciar apache con:
 			
 - Para poder acceder, seguir (https://stackoverflow.com/questions/5908752/can-anyone-confirm-that-phpmyadmin-allownopassword-works-with-mysql-databases y https://www.iven.in/2016/11/solved-phpmyadmin-1698-access-denied.html):
 
-Para ir al archivo de configuración de phpmyadmin
+Para ir al archivo de configuración de phpmyadmin:
 
 	sudo nano /etc/phpmyadmin/config.inc.php 
 
-Buscar la línea descomentarla y guardar el archivo
+Buscar la siguiente línea, descomentarla y guardar el archivo:
 
 	$cfg['Servers'][$i]['AllowNoPassword'] = TRUE; 
  Luego:
@@ -161,7 +159,7 @@ Script para instalación y actualización:
 
 	bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) 
 
-Instalar mosquitto-mqtt (protocolo de mensajeria usando un modelo de publicación/susbcripción: https://mosquitto.org/) con
+Instalar mosquitto-mqtt (protocolo de mensajeria usando un modelo de publicación/susbcripción: https://mosquitto.org/) con:
 
 	sudo apt install mosquitto
 
