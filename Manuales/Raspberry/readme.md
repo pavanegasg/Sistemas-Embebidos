@@ -87,13 +87,17 @@ Ejemplo:
 	- Luego correr:
 	
 	git clone https://github.com/oblique/create_ap
+	
 	cd create_ap
+	
 	make install
 	
 	- El archivo de configuración está en: /etc/create_ap.conf (sudo nano /etc/create_ap.conf)
 	- El punto de acceso se inicia con: sudo create_ap --config /etc/create_ap.conf
 	- Para que se inicie con systemd: 
+	
 	sudo systemctl start create_ap
+	
 	sudo systemctl enable create_ap
 
 ### Instalación de node-RED:
