@@ -7,7 +7,7 @@ LM35 es un sensor de temperatura con una precisión de 1ºC, este tiene una sali
 Como se dijo en la sección anterior este sensor tiene una salida lineal donde cada grado es equivalente a 10mV y se tiene un rango de operación de entre -55ºC y 150ºC. Con base en esto podemos obtener la siguiente formula, con la que se obtiene una función que entrega voltaje en función de la temperatura. 
 
 <p align="center">
-  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/LM35/FormulaV.PNG" width="350" title="hover text">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/LM35/FormulaV.PNG" width="200" title="hover text">
 </p>
 
 
