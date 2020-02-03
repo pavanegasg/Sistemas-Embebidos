@@ -8,3 +8,8 @@ Para la utilización de este sensor se empleo uso de la libreria _PulseSensor Pl
 
 ## Pruebas preliminares
 
+* La primera prueba que se realizo con el sensor fue obtener una medición de la señal análoga recibida por el sensor, la cual como se puede observar en la siguiente imagen, muestra una señal correspondiente al ritmo cardiaco del sujeto de prueba. 
+
+<p align="center">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/Pulse%20Sensor/PrimerPrueba.png" width="350">
+</p>
