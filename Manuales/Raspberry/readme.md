@@ -1,4 +1,4 @@
-## Inicio y pasos iniciales Raspberry Pi
+## Inicio y pasos iniciales con la Raspberry Pi
 
 En este documento se presentan los pasos y recursos iniciales para iniciar con la Raspberry Pi.
 
