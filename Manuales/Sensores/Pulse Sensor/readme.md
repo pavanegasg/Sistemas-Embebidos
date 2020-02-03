@@ -17,4 +17,9 @@ Esta prueba se realizo con la finalidad de obtener una medición de la señal an
 ## Obtención del BPM en humanos 
 
 Para la obtención de los latidos por minuto se hizo uso de la información obtenida la prueba preliminar, con esta se determino que un latido sucedía cada vez que la señal proveniente del sensor superaba un umbral, con esta información se empleo un programa que detecta el tiempo que transcurre entre latidos y con el inverso de este tiempo se obtiene la frecuencia cardiaca de la persona.
+
 Para poder definir este umbral es necesario calibrar el sensor, esta se realiza observando el valor proveniente del sensor, en el caso del sujeto de prueba empleado se encontró que este es de 510.
+
+<p align="center">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/Pulse%20Sensor/BPM.jpeg" width="350" title="hover text">
+</p>
