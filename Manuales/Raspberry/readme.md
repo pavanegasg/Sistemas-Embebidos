@@ -1,38 +1,59 @@
+## Inicio y pasos iniciales Raspberry Pi
+
+En este documento se presentan los pasos y recursos iniciales para iniciar con la Raspberry Pi.
+
 ### Para iniciar todo:
-- Descargar .img (Raspbian Lite) de https://www.raspberrypi.org/downloads/raspbian/, guía de instalación en https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
-- Correr el comando lsblk para saber donde está ubicada la memoria (algo como /dev/sdX, X es una letra)
-- Correr sudo dd if=nombreIMG of=/ubicaciónDisco bs=8M, tener MUCHO cuidado con elegir bien el disco
+
+* Descargar el archivo .img del sistema operativo (Raspbian Lite) desde https://www.raspberrypi.org/downloads/raspbian/, la guía de instalación se encuentra en https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+* Correr el comando 
+
+	lsblk
+
+para saber donde está ubicada la memoria SD donde se va a instalar el .img (será algo como /dev/sdX, donde X es una letra).
+* Correr el siguiente comando teniendo mucho cuidado de elegir bien el disco:
+
+	sudo dd if=nombreIMG of=/ubicaciónDisco bs=8M
+	
+Ejemplo:
+
 	sudo dd bs=8M if=2019-07-10-raspbian-buster-lite.img of=/dev/sdb status=progress conv=fsync
-- En la carpeta boot modificar:
+	
+* Cuando haya finalizado la instalación, ir a la carpeta boot y modificar:
 	- config.txt: agregar enable_uart=1 al final
-	- cmdline.txt: se le quita la palabra “quiet”
-	- Crear un archivo vacio con el nombre "ssh", usar el comando sudo echo "" > ssh en la carpeta
-- Poner la microSD en la RPI y conectar con ethernet al PC
-- Por puerto serial, correr:
+	- cmdline.txt: se elimina la palabra “quiet”
+	- Crear un archivo vacio con el nombre "ssh", usar el siguiente comando en la carpeta
+	
+	sudo echo "" > ssh
+	
+* Insertar la microSD en la RPI y conectar con cable ethernet al PC
+
+* Si se desea ingresar por puerto serial, correr:
 	- Para configurar minicom: sudo minicom -s, configuración de la puerta serial, elegir bien donde está conectado el conversor ttl (ttyUSB0 generalmente) y que la velocidad sea 115200.
-	- Para conectarse: minicom 
-- Por ethernet, correr sudo nm-connection-editor, ir a conexión cableada, ajustes de ipv4 y habilitar compartir con otros equipos
+	- Para conectarse: minicom.
+- Para conectarse con ethernet, correr sudo nm-connection-editor, ir a conexión cableada, ajustes de ipv4 y habilitar compartir con otros equipos.
 - Con la raspberry conectada por ethernet correr:
-	- ifconfig: la primera dirección que aparece es la del PC, en este caso 10.42.0.1
-	- nmap -sT 10.42.0.2-254 (los primeros 3 números son los primeros 3 de la dirección IP del PC): busca la dirección de la raspberry conectada, en este caso 10.42.0.29
+	- ifconfig: la primera dirección que aparece es la del PC, por ejemplo 10.42.0.1
+	- nmap -sT 10.42.0.2-254 (los primeros 3 números son los primeros 3 de la dirección IP del PC): busca la dirección de la raspberry conectada, por ejemplo 10.42.0.29
 	- ssh pi@10.42.0.29: para conectarse a la raspberry
 	- contraseña: raspberry
 - Finalmente, sudo apt update y sudo apt upgrade para actualizar paquetes
 
-Para instalar los servidores:
+### Para instalar los servidores:
 
-- Servidor de paginas:
+* Servidor de paginas:
 	- Instalar con: sudo apt install apache2
 	- Se puede verificar ingresando la dirección ip en un navegador
 	- En cd var/www/html se encuentran las páginas
 	- Para eliminar la página por defecto: sudo mv index.html index.old
 	- Para escribir una nueva: sudo nano index.html
 
-- Servidor de bases de datos:
+* Servidor de bases de datos:
 	- Instalar con: sudo apt install mariadb-client mariadb-server
 	- Para entrar a la base de datos: sudo mysql -u root -p
-	- Para instalar phpmyadmin, manejador html de base de datos, combina servidor de paginas y de base de datos (conexión de capa baja entre base y páginas): sudo apt install phpmyadmin
-		- contraseña: ServerPassword
+	- Para instalar phpmyadmin, manejador html de base de datos, combina servidor de paginas y de base de datos (conexión de capa baja entre base y páginas): 
+		
+		sudo apt install phpmyadmin
+		
 	- en IP_rasp/phpmyadmin se encuentra la página
 		- Si no se encuentra, intentar (https://askubuntu.com/questions/387062/how-to-solve-the-phpmyadmin-not-found-issue-after-upgrading-php-and-apache): 
 			* Abrir el archivo de configuración: sudo nano /etc/apache2/apache2.conf
@@ -47,7 +68,7 @@ Para instalar los servidores:
 			* flush privileges;
 			* \q
 
-Configuración del access point:
+### Configuración del access point:
 
 - Seguir el tutorial: https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md
 	- NOTA: evitar agregar denyinterfaces eth0, vuelve la raspberry indetectable con ethernet.
@@ -64,22 +85,24 @@ Configuración del access point:
 - Si el tutorial no funciona, instalar create_ap:
 	- Leer README en https://github.com/oblique/create_ap
 	- Luego correr:
+	
 	git clone https://github.com/oblique/create_ap
 	cd create_ap
 	make install
+	
 	- El archivo de configuración está en: /etc/create_ap.conf (sudo nano /etc/create_ap.conf)
 	- El punto de acceso se inicia con: sudo create_ap --config /etc/create_ap.conf
 	- Para que se inicie con systemd: 
 	sudo systemctl start create_ap
 	sudo systemctl enable create_ap
 
-Instalación de node-RED:
+### Instalación de node-RED:
 
 - Seguir https://nodered.org/docs/getting-started/raspberrypi:
 	- Script para instalación y actualización: bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) 
-- Instalar mosquitto-mqtt con, protocolo de mensajeria usando un modelo de publicación/susbcripción (https://mosquitto.org/): sudo apt install mosquitto
+- Instalar mosquitto-mqtt (protocolo de mensajeria usando un modelo de publicación/susbcripción: https://mosquitto.org/) con,: sudo apt install mosquitto
 
-Handy commands:
+### Comandos utiles:
 
 - Permite ver algunas líneas de algún archivo log (reemplazar logFILE): sudo tail -f /var/log/logFILE
 - Uso del disco en tamaños de bloque: df -k
