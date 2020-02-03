@@ -8,3 +8,12 @@ Una celda de carga es un puente de Wheastone el cual emplea resistencias que var
 
 ## Prerrequisitos
 
+Para la utilización de este sensor se empleo de la libreria _HX_711_ la cual se puede descargar en el IDE de Arduino.
+
+## Calibración
+
+Para la calibración de este se empleo un programa en el cual se ingresa el peso en gramos del objeto que se posiciona en la celda de carga, en el caso de la celda de carga numero 1 se encontró que el valor de calibración es -391.55.
+
+<p align="center">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/HX711%20y%20celda%20de%20carga/CeldaCalibracion.jpeg" width="550" title="hover text">
+</p>
