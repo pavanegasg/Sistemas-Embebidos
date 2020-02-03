@@ -4,7 +4,7 @@ Pulse sensor es un sensor diseñado por Joel Murphy y Yury Gitman, el cual permi
 
 ## Prerrequisitos
 
-Para la utilización de este sensor se empleo uso de la libreria _PulseSensor Playground_ la cual se puede descargar en el IDE de Arduino.
+Para la utilización de este sensor se empleo de la libreria _PulseSensor Playground_ la cual se puede descargar en el IDE de Arduino.
 
 ## Pruebas preliminares
 
