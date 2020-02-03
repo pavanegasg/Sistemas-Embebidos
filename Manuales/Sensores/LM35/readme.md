@@ -15,5 +15,5 @@ Como se dijo en la sección anterior este sensor tiene una salida lineal donde c
 La temperatura obtenida con este se presenta a continuación en forma de gráfica empleando _serial plotter_ del IDE de Arduino con la finalidad de observar la velocidad con la que el sensor reacciona a cambios de temperatura.
 
 <p align="center">
-  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/LM35/LM35.png" width="350" title="hover text">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Manuales/Sensores/LM35/LM35.png" width="430" title="hover text">
 </p>
