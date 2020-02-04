@@ -128,7 +128,7 @@ endmodule
   
   La segunda parte consiste en enviar datos al microcontrolador por comunicación serial, para este caso se escogió UART, dada la fácil implementación. Los datos a enviar son los referentes a la diferencia de comida y agua actual con la medida un instante antes. 
   
-  * Primera prueba
+  * Primera prueba:
  La primera prueba para esta sección fue la implementación de un puerto UART desde la FPGA, ya que a pesar de que la BlackIceMX cuenta con puertos seriales estos no están conectados directamente a la FPGA. El puerto implementado es una adaptación del puerto disponible en [open-fpga-verilog-tutorial](https://github.com/Obijuan/open-fpga-verilog-tutorial/wiki)
  
   
@@ -293,7 +293,7 @@ endmodule
 ```
 
 * Segunda prueba
-  * primera parte
+  * Primera parte:
   La segunda prueba fue incorporar los datos provenientes de las celdas de carga y el modulo `uart_tx.v`. Primero se utilizó un valor fijo para la lectura de comida y agua.
   
 ```verilog  
@@ -458,7 +458,7 @@ endmodule
 
 ```  
 
-  * segunda parte
+  * Segunda parte:
   La parte final fue cambiar el valor fijo de agua y comida y probar la transmisión.
   
   
