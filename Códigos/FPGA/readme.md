@@ -293,14 +293,15 @@ endmodule
 ```
 
 * Segunda prueba
-  La segunda prueba fue incorporar los datos provenientes de las celdas de carga y el modulo `uart_tx.v`
+  * primera parte
+  La segunda prueba fue incorporar los datos provenientes de las celdas de carga y el modulo `uart_tx.v`. Primero se utilizó un valor fijo para la lectura de comida y agua.
   
 ```verilog  
 `include "baudgen.vh"
 
-module Top(
-			input clk,
-			input [3:0] datoAgua,
+	module Top(					// Declaración de variables
+			input clk,			//	
+			input [3:0] datoAgua,		
 			input [3:0] datoPeso,
 			output wire tx,
 			output [1:0] stat
@@ -308,9 +309,9 @@ module Top(
 
 	//Cables y registros para conexión de modulos 
 
-	parameter BAUD = `B115200;
+	parameter BAUD = `B115200;			// Definición de tasa de baudios a usar en la comunicación serial
 
-		reg resetUart = 0;
+		reg resetUart = 0;			// Cables y registros para conexión de modulos
 		reg startUart;
 
 		wire [3:0] Comida;
@@ -318,11 +319,11 @@ module Top(
 
 		wire [7:0] comidaFinal;
 		wire [7:0] aguaFinal;
-		assign comidaFinal = 8'b01111011;
+		assign comidaFinal = 8'b01111011;	// Valor fijo de agua y comida
 		assign aguaFinal = 8'b01111101;
 		reg [7:0] data;
 
-		reg counter;
+		reg counter;				// Contador para máquina de estado	
 		reg cena;
 		wire readyUart;
 
@@ -331,11 +332,11 @@ module Top(
 
 	//Instanciación modulos
 
-	always @(posedge clk) begin
+	always @(posedge clk) begin			// Inicialización puerto serial 
 		resetUart <= 1;
 	end
 
-	uart_tx #(.BAUD(BAUD)) Uart_txComida(
+	uart_tx #(.BAUD(BAUD)) Uart_txComida(		// Instanciación de modulos
 			.clk(clk),
 			.rstn(resetUart),
 			.start(startUart),
@@ -356,7 +357,7 @@ module Top(
 			.salidaPeso(Comida)
 			);
 
-	always @*
+	always @*					// Contador
   		case (counter)
     		1'b0: data <= comidaFinal;
    			1'b1: data <= aguaFinal;
@@ -389,7 +390,7 @@ module Top(
 
 		case(state)
 			
-			START: begin 
+			START: begin 				// Espera inicial
 				divStart <= 1;
 					if(divOut) begin 
 						state <= S1;
@@ -398,17 +399,17 @@ module Top(
 					else state <= START;
 			end
 		
-			S1:  begin
+			S1:  begin				// Transmisión de comida y agua 
 				if(readyUart == 1) state <= S2;
 				else state <= S1;
 			end
 
-			S2: begin
-				if(counter == 1) state <= WAIT;
-				else state <= S1;
+			S2: begin				// Regresar a estado anterior cuando ya se haya transmitido 
+				if(counter == 1) state <= WAIT; // comida. Pasar a estado siguiente cuando se hayan 
+				else state <= S1;		// transmitido los dos valores
 			end
 
-			WAIT: begin
+			WAIT: begin				// Espera de 10 segundos
 				divStart <= 1;
 					if(divOut) begin 
 						state <= START;
@@ -423,7 +424,7 @@ module Top(
 
 	end
 
-	always @*
+	always @*						// Asignación de microordenes
 
 			case(state)
 				START: begin
@@ -456,10 +457,9 @@ module Top(
 endmodule
 
 ```  
-  
-  
 
+  * segunda parte
+  La parte final fue cambiar el valor fijo de agua y comida y probar la transmisión.
   
   
-
-
+  
