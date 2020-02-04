@@ -4,6 +4,9 @@ Bluetooth se da entre dos tipos de dispositivos: Maestro y Esclavo.  El módulo 
 como esclavo, es decir, preparado para escuchar peticiones de conexión; lo cual es conveniente en este caso ya que el celular se comportará
 como maestro.
 
+ <p align="center">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentos/Imagenes/modulo-bluetooth-hc05.jpg" width="550" title="hover text">
+</p>
 Este módulo cumple con las especificaciones del estándar Bluetooth 2.0 que es perfectamente compatible con celulares o smartphones Android, 
 más no con los Iphone. 
 
@@ -31,6 +34,12 @@ más no con los Iphone.
  
  ## Conexión con el celular
  
- <p align="center">
-  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentos/Imagenes/modulo-bluetooth-hc05.jpg" width="550" title="hover text">
-</p>
+El celular como se había mencionado anteriormente funciona en este caso coo maestro, para ello se hace uso del Bluetooth que posee el
+mismo y la conexión se realiza mediante la app creada con ayuda del SDK de código abierto, Ionic. La cual posee un complemente llamado 
+**Bluetooth Serial**, a cual facilita la comunicación
+
+    **// Write a string
+     this.bluetoothSerial.write('hello world').then(success, failure)**
+     
+  
+
