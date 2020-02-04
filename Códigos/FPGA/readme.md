@@ -297,6 +297,8 @@ endmodule
   La segunda prueba fue incorporar los datos provenientes de las celdas de carga y el modulo `uart_tx.v`. Primero se utilizó un valor fijo para la lectura de comida y agua.
   
 ```verilog  
+//Top.v
+
 `include "baudgen.vh"
 
 	module Top(					// Declaración de variables
@@ -462,4 +464,4 @@ endmodule
   La parte final fue cambiar el valor fijo de agua y comida y probar la transmisión.
   
   
-  
+ ### NOTA: Las versiones finales de los archivos y modulos mencionados están disponibles.
