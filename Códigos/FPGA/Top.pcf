@@ -1,0 +1,29 @@
+set_io clk 60
+
+set_io stat[0] 55
+set_io stat[1] 56
+
+set_io datoAgua[0] 141 # P41
+set_io datoAgua[1] 142 # P40
+set_io datoAgua[2] 138 # P43
+set_io datoAgua[3] 139 # P42
+set_io datoAgua[4] 136 # P45
+set_io datoAgua[5] 137 # P44
+set_io datoAgua[6] 134 # P47
+set_io datoAgua[7] 135 # P46
+
+
+set_io datoPeso[0] 9  # P31
+set_io datoPeso[1] 10 # P30
+set_io datoPeso[2] 15 # P27
+set_io datoPeso[3] 16 # P26
+set_io datoPeso[4] 11 # P29
+set_io datoPeso[5] 12 # P28
+set_io datoPeso[6] 17 # P25
+set_io datoPeso[7] 18 # P24
+
+
+set_io tx 1 # P39
+
+
+
