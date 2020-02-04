@@ -2,7 +2,7 @@
 El NodeMCU es una plataforma IoT de código abierto basado en el chip ESP8266 (ESP-12E), siendo un entorno propicio para aplicaciones que requieran conectividad WiFi, de manera que es posible enviar y recibir datos e incluso controlas pines de entrada y salida de forma remota, de esta misma manera también es posible por medio de comunicación serial obtener los datos de los sensores recopilados por el arduino.
 
 <p align="center">
-  <img src="https://github.com/pavanegasgSistemas-Embebidos/Documentación/Comunicación/NodeMCU/NodeMCU.JPG" width="550" title="hover text">
+  <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentaci%C3%B3n/Comunicaci%C3%B3n/NodeMCU/NodeMCU.JPG" width="450" >
 </p>
 
 ## Específicaciones técnicas
