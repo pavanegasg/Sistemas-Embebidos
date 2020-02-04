@@ -43,15 +43,21 @@ El celular como se había mencionado anteriormente, funciona en este caso como m
 
 Posteriormente se definen en el archivo **.ts** las funciones que por medio de la dirección permiten realizar la conexión entre la app y el dispositivo (HC 05). 
   
- -CheckBluetoothEnable()
- -
-
-
-     
-
+    -CheckBluetoothEnable()
+    -ListPairedDevices()
+    -SelectDevice()
+    -connect(address)
+    -deviceConnect()
+    -SendData()
+    -ShowError()
+    
+ Se define la función para escribir 
+ 
     // Para escribir una función
      this.bluetoothSerial.write('hello world').then(success, failure)
      
+Finalmente en el **.html** se llama la función con agregando **class " "** en cada botón para que envíe vía bluetooth el dato al HC05 y sea leído por el Arduino nano. 
 
-  
+
+   
 
