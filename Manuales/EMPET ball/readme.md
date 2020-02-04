@@ -8,7 +8,7 @@
 Para hacer uso del dispositvo ingrese a la aplicación EMPET. Haga click en el botón de entretenimiento donde se desplegarán
 dos opciones, autómatico y manual.
 
-## Modo AUtomático
+## Modo Automático
 Este modo permitirá al usuario mover aleatoriamente la pelota. La comunicación se realiza mediante el servidor, por lo cuál 
 podrá acceder al dispositivo estando fuera de la casa. 
 
