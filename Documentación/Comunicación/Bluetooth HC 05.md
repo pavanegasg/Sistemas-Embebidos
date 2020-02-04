@@ -36,10 +36,10 @@ más no con los Iphone.
  
 El celular como se había mencionado anteriormente funciona en este caso coo maestro, para ello se hace uso del Bluetooth que posee el
 mismo y la conexión se realiza mediante la app creada con ayuda del SDK de código abierto, Ionic. La cual posee un complemente llamado 
-**Bluetooth Serial**, a cual facilita la comunicación
+**Bluetooth Serial**, la cual facilita la comunicación.
 
-    **// Write a string
-     this.bluetoothSerial.write('hello world').then(success, failure)**
+    // Write a string
+     this.bluetoothSerial.write('hello world').then(success, failure)
      
   
 
