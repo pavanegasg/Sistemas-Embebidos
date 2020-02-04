@@ -26,7 +26,7 @@ El primer paso es conectar el dispositivo a bluetooth, para ello hay que hacer c
   <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentos/Imagenes/Bluetooth.jpeg">
 </p>
 
-EL paso dos consiste en controlar el disposito con ayuda de los botones que salen en la pantalla.
+El paso dos consiste en controlar el disposito con ayuda de los botones que salen en la pantalla.
 
 <p align="center">
   <img src="https://github.com/pavanegasg/Sistemas-Embebidos/blob/master/Documentos/Imagenes/App.jpeg">
