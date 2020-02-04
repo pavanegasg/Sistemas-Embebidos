@@ -1,2 +1,2 @@
 
-## Actuadores y motorreductor
+## Motorreductor
