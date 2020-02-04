@@ -34,12 +34,24 @@ más no con los Iphone.
  
  ## Conexión con el celular
  
-El celular como se había mencionado anteriormente funciona en este caso coo maestro, para ello se hace uso del Bluetooth que posee el
-mismo y la conexión se realiza mediante la app creada con ayuda del SDK de código abierto, Ionic. La cual posee un complemente llamado 
-**Bluetooth Serial**, la cual facilita la comunicación.
+El celular como se había mencionado anteriormente, funciona en este caso como maestro. La conexión se realiza mediante la app creada con el SDK de código abierto, Ionic. La cual posee un complemente llamado **Bluetooth Serial**, facilitando la comunicación. 
 
-    // Write a string
+    //Instalación del complemento
+    $ ionic cordova plugin add cordova-plugin-bluetooth-serial
+    $ npm install --save @ionic-native/bluetooth-serial
+
+
+Posteriormente se definen en el archivo **.ts** las funciones que por medio de la dirección permiten realizar la conexión entre la app y el dispositivo (HC 05). 
+  
+ -CheckBluetoothEnable()
+ -
+
+
+     
+
+    // Para escribir una función
      this.bluetoothSerial.write('hello world').then(success, failure)
      
+
   
 
