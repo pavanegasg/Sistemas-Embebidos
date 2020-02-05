@@ -7,7 +7,6 @@ Esta conexión permite obtener los datos provenientes de las celdas de carga y l
    La primera prueba fue recibir datos de 4 bits para enviar esos mismos datos como salida y mostrar ese valor en los leds.
    
 ```verilog 
-
 // rece.v
 
 module rece( 
@@ -60,10 +59,7 @@ begin
 	endcase
 end 
 
-endmodule 
-    
-   
-   
+endmodule   
 ```   
    * Segunda prueba:
      El segundo diseño consitió en recibir un número de 4 bits, y hacer que la salida fuera ese número menos el número recibido inmediatamente anterior. Adicionalmente, se muestra el valor de la salida en los leds de la tarjeta.
@@ -133,7 +129,6 @@ endmodule
  
   
 ```verilog
-
 //uart_tx.v
 
 `default_nettype none
@@ -289,7 +284,6 @@ assign baud_en = (state == IDLE) ? 0 : 1;
 assign ready = (state == IDLE) ? 1 : 0;
 
 endmodule
-
 ```
 
 * Segunda prueba
@@ -394,11 +388,11 @@ endmodule
 			
 			START: begin 				// Espera inicial
 				divStart <= 1;
-					if(divOut) begin 
-						state <= S1;
-						divStart <= 0;
-					end
-					else state <= START;
+				if(divOut) begin 
+					state <= S1;
+					divStart <= 0;
+				end
+				else state <= START;
 			end
 		
 			S1:  begin				// Transmisión de comida y agua 
@@ -413,11 +407,11 @@ endmodule
 
 			WAIT: begin				// Espera de 10 segundos
 				divStart <= 1;
-					if(divOut) begin 
-						state <= START;
-						divStart <= 0;
-					end
-					else state <= WAIT;
+				if(divOut) begin 
+					state <= START;
+					divStart <= 0;
+				end
+				else state <= WAIT;
 			end
 
 			default: state <= START;
